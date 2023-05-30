@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-[140rem] mx-auto p-[1.5rem];
+}
+@layer base{
+    html{
+        font-family:"Montserrat", sans-serif, Arial, sans-serif;
+    }
+}
+
+@layer components{
+    .header__wrapper{
+        @apply flex items-center border-b-[1px] z-50;
+    }
+
+    .header__nav{
+        @apply hidden lg:block;
+    }
+    .header__social{
+        @apply p-[.5rem] border-b-[1px];
+    }
+    .header__social ul{
+        @apply flex justify-center gap-[1rem];
+    }
+    .header__actions{
+        @apply block fixed top-[4.9rem] w-[40%] left-[-100rem] h-[100vh] overflow-hidden overflow-y-auto ease-in duration-[.5s] lg:hidden;
+    }
+    .header__actions.open{
+        @apply left-0 ease-in duration-[.5s];
+    }
+    .header__list h4{
+        @apply  hover:bg-primary
+    }
+    .header__item:first-child{
+        @apply bg-primary 
+    }
+    .header__item h4{
+        @apply flex justify-between text-[1rem] cursor-pointer duration-[.5s] transition-all text-gray-500;
+    }
+
+    .header__item i{
+        @apply transition ease-linear duration-300;
+    }
+
+    .header__item i.open{
+        @apply transition ease-linear duration-300 rotate-[180deg];
+    }
+    .header__item{
+        @apply my-[1rem];
+    }
+    .header__item ul{
+        @apply max-h-0 overflow-hidden duration-[.5s] transition ease-in;
+    }
+
+    .header__item ul.open{
+        @apply max-h-[50rem] p-[1rem] transition ease-linear duration-[.5s];
+    }
+    .header__item ul li {
+        @apply my-[2rem]  hover:bg-primary duration-[.5s] transition-all;
+    }
+    .header__item ul li span{
+        @apply  text-primary border-b-[1px];
+    }
+    .toggle__menu{
+        @apply px-[.8rem] py-[1rem] lg:hidden;
+    }
+    .toggle__menu span{
+        @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full duration-[.5s] ease-in ;
+    }
+    .toggle__menu span:nth-child(2){
+        @apply my-[.2rem];
+    }
+    .toggle__menu.open span:first-child{
+        @apply w-[.7rem] translate-x-0 translate-y-[10px] bg-dark duration-[.5s] rotate-[225deg] ease-in;
+    }
+    .toggle__menu.open span:last-child{
+        @apply w-[.7rem] translate-x-0 translate-y-[-10.99px] bg-dark duration-[.5s] rotate-[-225deg] ease-in;
+    }
+    .ellipsis{
+        @apply px-[.8rem] py-[1rem] ml-[15rem] lg:hidden;
+    }
+    .ellipsis span{
+        @apply w-[.3rem] h-[.3rem] bg-dark block rounded-full duration-[.5s] ease-in ;
+    }
+    .ellipsis span:nth-child(2){
+        @apply my-[.2rem];
+    }
+    .ellipsis.open span:first-child{
+        @apply translate-x-0 translate-y-[1px] bg-dark duration-[.5s] rotate-[225deg] ease-in;
+    }
+    .ellipsis.open span:last-child{
+        @apply translate-x-0 translate-y-[-1px] bg-dark duration-[.5s] rotate-[-225deg] ease-in;
+    }
+    .ellipsis.open span:nth-child(2){
+        @apply  duration-[.5s] ease-in;
+    }
+    .header_web{
+        @apply hidden
+    }
+    .toggle__nav{
+        @apply mt-3 
+    }
+
+    .toggle__nav ul li i{
+        @apply text-primary 
+    }
+    .toggle__nav span{
+        @apply ml-[1rem]
+    }
+    .toggle__nav ul li{
+    @apply ml-[1rem] my-[1rem]
+    }
+    .toggle__nav a span{
+        @apply border-[1px] border-primary ml-[2rem] px-[2rem] py-[1rem] hover:bg-primary 
+    }
+
+.toggle__nav{
+    @apply absolute right-0 top-[-100rem] lg:relative lg:top-[-5rem]
+}
+.toggle__nav ul{
+    @apply lg:flex items-baseline lg:gap-[5rem] lg:ml-[25rem] 
+}
+.toggle__nav.open{
+    @apply top-[3.5rem]
+}
+.header__nav__list{
+    @apply lg:flex lg:justify-between
+}
+}
