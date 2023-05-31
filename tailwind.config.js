@@ -8,7 +8,19 @@ module.exports = {
       primary: '#01B3A7',
       grey: '#F6F6F6',
       hover:' hsl(235,86.1%,71.8%)',
-      hoverb:'(#313338)'},
+      hoverb:'(#313338)'}, 
+  },
+  screens: {
+    'sm': '500px',
+    'md': '768px',
+    'lg': '1080px',
+    'xl': '1920'
+  },
+
+  backgroundImage: {
+    'bannerBG1':'url("./img/slider-4-slide-3-1920x678.jpg")',
+    'bannerBG2':'url("./img/slider-4-slide-2-1920x678.jpg")',
+    'bannerBG3': 'url("./img/slider-4-slide-1-1920x678.jpg")',
   },
   plugins: [],
 }

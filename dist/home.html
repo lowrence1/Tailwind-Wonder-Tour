@@ -5,62 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wonder Tour - Home</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./output.css">
-    <script src="https://kit.fontawesome.com/84f56e6e16.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c0a9717a9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
 <body>
-
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__nav">
-                    <div class="header__icons">
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-google-plus-g" style="color: #ffffff;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
-                        </ul>
+        <div class="header__wrapper">
+            <div class="branding">
+                <div class="logo">
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+                    <img src="./img/logo-default.-188x19.png" alt="">
                 </div>
-                <div class="header__actions">
-                    <div class="header__social">
-                        <ul>
-                            <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-google-plus-g" style="color: #000000;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="header__list">
-                        <div class="header__item">
-                            <h4>Home</h4>
-                        </div>
-                        <div class="header__item">
-                            <h4>About<i class="fa-solid fa-chevron-down"></i></h4>
+                <div class="contact__nav">
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i><span>09:00AM — 05:00PM</span> </li>
+                        <li><i class="fa-solid fa-phone"></i><span> +1 323-913-4688</li></span>
+                        <a class="">
+                            <h4><span>Get a Free Quote</span></h4>
+                        </a>
+                    </ul>
+                </div>
+                <div class="toggle__contact">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav__container">
+            <div class="header__nav">
+                <div class="header__nav__icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <ul>
+                    <li><a href="" class="text-white bg-primary lg:bg-slate-600">Home</a></li>
+                    <li>
+                        <a href="javascript:void(0);">About<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown">
                             <ul>
                                 <li><a href="">Our Team</a></li>
                             </ul>
                         </div>
-                        <div class="header__item">
-                            <h4>Our Tours<i class="fa-solid fa-chevron-down"></i></h4>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Our Tours<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown">
                             <ul>
                                 <li><a href="">Single Tour</a></li>
                             </ul>
                         </div>
-                        <div class="header__item">
-                            <h4>Gallery<i class="fa-solid fa-chevron-down"></i></h4>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Gallery<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown">
                             <ul>
                                 <li><a href="">Grid Gallery</a></li>
-                                <li><a href="">Full Width Gallery</a></li>
-                                <li><a href="">Masonry Gallery</a></li>
+                                <li><a href="">Full width Gallery</a></li>
+                                <li><a href="">Masonry</a></li>
                                 <li><a href="">Full Width Masonry Gallery</a></li>
                             </ul>
                         </div>
-                        <div class="header__item">
-                            <h4>Blog<i class="fa-solid fa-chevron-down"></i></h4>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown">
                             <ul>
                                 <li><a href="">Classic Blog</a></li>
                                 <li><a href="">Grid Blog</a></li>
@@ -69,80 +87,88 @@
                                 <li><a href="">Blog Post</a></li>
                             </ul>
                         </div>
-                        <div class="header__item">
-                            <h4>Contact Us</h4>
+                    </li>
+                    <li><a href="javascript:void(0);">Contact Us</a></li>
+                    <li>
+                        <a href="javascript:void(0);">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown">
+                            <div class="dropdown__item">
+                                <h4>Elements</h4>
+                                <ul>
+                                    <li><a href="">Typography</a></li>
+                                    <li><a href="">Buttons</a></li>
+                                    <li><a href="">Forms</a></li>
+                                    <li><a href="">Tabs and Accordions</a></li>
+                                    <li><a href="">Counters</a></li>
+                                    <li><a href="">Icons with Text</a></li>
+                                    <li><a href="">Progress Bars</a></li>
+                                    <li><a href="">Grid System</a></li>
+                                    <li><a href="">Privacy policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__item">
+                                <h4>Additional Pages</h4>
+                                <ul>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">Testimonials</a></li>
+                                    <li><a href="">404 Page</a></li>
+                                    <li><a href="">503 Page</a></li>
+                                    <li><a href="">Pricing</a></li>
+                                    <li><a href="">Coming Soon</a></li>
+                                    <li><a href="">Contact Us 2</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Search results</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="header__item">
-                            <h4>Pages<i class="fa-solid fa-chevron-down"></i></h4>
-                            <ul>
-                                <li><span>Elements</span>
-                                <li><a href="">Typography</a></li>
-                                <li><a href="">Buttons</a></li>
-                                <li><a href="">Forms</a></li>
-                                <li><a href="">Tabs and Accordions</a></li>
-                                <li><a href="">Counters</a></li>
-                                <li><a href="">Icons with Text</a></li>
-                                <li><a href="">Progress Bars</a></li>
-                                <li><a href="">Grid System</a></li>
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><span>Additional Pages</span></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">Testimonials</a></li>
-                                <li><a href="">404 Page</a></li>
-                                <li><a href="">503 Page</a></li>
-                                <li><a href="">Pricing</a></li>
-                                <li><a href="">Coming Soon</a></li>
-                                <li><a href="">Contact Us 2</a></li>
-                                <li><a href="">FAQ</a></li>
-                                <li><a href="">Search Results</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="toggle__menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="branding">
-                    <img src="./img/logo-default.-188x19.png" alt="">
-                    <!-- <div class="header__nav__list">
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Our Tour</a></li>
-                            <li><a href="">Gallery</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Pages</a></li>
-                        </ul>
-                    </div> -->
-                </div>
-                <div class="ellipsis">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-
+                    </li>
+                </ul>
             </div>
-
-
-            <div class="toggle__nav">
-                <div class="toggle__dot">
-                    <ul>
-                        <li><i class="fa-regular fa-clock"></i><span>09:00AM — 05:00PM</span> </li>
-                        <li><i class="fa-solid fa-phone"></i><span> +1 323-913-4688</li></span>
-                        <a class="qoute" href="#"><span>Get a Quote</span></a>
-                    </ul>
-                </div>
-
-            </div>
-
-
+        </div>
     </header>
 
+    <section class="banner">
+        <div class="banner__wrapper">
+            <div class="banner__slider1">
+                <div class="banner__text">
+                    <p>ENJOY THE BEST DESTINATIONS WITH OUR TRAVEL AGENCY</p>
+                    <h2> Explore<span> The WORLD</span></h2>
+                    <a href=""><span> Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="banner__slider2">
+                <div class="banner__text">
+                    <p>A TEAM PROFESSIONAL TRAVEL EXPERTS</p>
+                    <h2>Trust<span> Our Experience</span></h2>
+                    <a href=""><span> Get in Touch</span></a>
+                </div>
+            </div>
+            <div class="banner__slider3">
+                <div class="banner__text">
+                    <p>BUILD YOUR NEXT HOLIDAY TRIP WITH US</p>
+                    <h2>Create<span> Your Tour</span></h2>
+                    <a href=""><span> Get in Touch</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script type="module">
+        // import {tns} from './src/tiny-slider.js';
+        var slider = tns({
+            container: '.banner__wrapper',
+            items: 1,
+            axis: 'vertical',
+            slideBy: 'page',
+            autoplay: true,
+            controls: false,
+            nav: true,
+            navPosition: 'top',
+            autoplayButtonOutput: false,
+            
+        });
+    </script>
 </body>
 
 </html>
