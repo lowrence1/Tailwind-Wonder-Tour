@@ -12,7 +12,9 @@
 .tns-nav button{
     @apply bg-gray-400 hover:bg-light w-[1rem] h-[1rem] m-[.5rem] flex focus:bg-primary;
 }
-
+.tns-nav .tns-nav-active{
+    @apply bg-primary
+}
 
 @layer components{
     .header{
@@ -40,13 +42,13 @@
         @apply flex justify-between items-center;
     }
     .contact__nav{
-        @apply z-50 absolute right-0 top-[6rem] opacity-0 overflow-hidden transition-all duration-500 lg:relative lg:overflow-visible lg:max-h-full lg:opacity-100 lg:top-0 lg:right-0 lg:bg-[none];
+        @apply block z-50 absolute right-0 top-[6rem] opacity-0 overflow-hidden transition-all duration-500 lg:relative lg:overflow-visible lg:max-h-full lg:opacity-100 lg:top-0 lg:right-0 lg:bg-[none] lg:flex lg:items-center;
     }
     .contact__nav ul{
         @apply ml-[2rem] lg:flex items-center justify-between gap-5;
     }
     .contact__nav.open{
-        @apply w-[15rem] bg-light h-[10rem] top-[4rem] opacity-100 transition-all duration-500;
+        @apply  bg-light h-[10rem] top-[4rem] opacity-100 transition-all duration-500 lg:h-[5rem] lg:top-0 ;
     }
     
     .contact__nav a span{
@@ -154,13 +156,13 @@
         @apply bg-bannerBG min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
     } */
     .banner__slider1{
-        @apply bg-bannerBG1 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
+        @apply bg-center bg-bannerBG1 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
     }
     .banner__slider2{
-        @apply bg-bannerBG2 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
+        @apply bg-center bg-bannerBG2 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
     }
     .banner__slider3{
-        @apply bg-bannerBG3 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
+        @apply bg-center bg-bannerBG3 min-h-[100vh] bg-cover bg-no-repeat lg:min-h-[45rem] flex items-center
     }
     .banner__wrapper{
         @apply lg:mx-auto lg:items-start lg:justify-start 
@@ -180,6 +182,105 @@
     .banner__text a{
         @apply text-[1.3rem] text-light border-[1px]  border-light px-[2rem] py-[1rem] hover:bg-[#50ba87] 
     }
-   
+   /* ---------BALLON */
+/* .lobo img{
+    @apply flex relative top-[-5rem] */
+.container {
+@apply bg-[#f7f7f7]
+}
+.all{
+    @apply w-[20rem] mx-auto ;
+}
+.all figure{
+    @apply overflow-hidden;
+}
+.ballon__branding{
+    @apply mt-[3rem] lg:flex lg:relative lg:top-[-3rem] lg:max-w-[70rem] lg:m-auto
+}
+.all figure img{
+    @apply flex hover:scale-[1.05] ease-in transition-all cursor-pointer
+}
+.text{
+    @apply flex justify-center items-center relative top-[-4rem]
+}
+.text h3{
+    @apply  text-light text-[1.5rem] font-semibold
+}
+.other{
+    @apply flex
+}
+.other a{
+    @apply flex text-[1.3rem] items-center m-auto 
+}
+.other i{
+    @apply flex mt-[.5rem] ml-3 hover:scale-x-[2]
+}
+
+/* --------DISCOVER---------- */
+.discover__list h2{
+    @apply text-[2rem] flex justify-center my-[2rem]
+}
+.discover__list ul{
+    @apply text-center mb-[2rem]
+}
+.discover__list ul li{
+    @apply  mb-[1rem]
+}
+.discover__list ul li a {
+    @apply items-center text-gray-500 border-t-2 border-b-2 text-[1.5rem]  hover:text-primary
+}
+.discover__list span{
+   @apply text-primary border-t-2 border-b-2 text-[1.5rem]
+}
+.discover__list p{
+    @apply hidden
+}
+.btn{
+    @apply flex gap-[2rem] justify-center
+}
+.btn-green{
+    @apply text-light border-[3px] border-primary bg-primary h-[4rem] w-[8rem] px-[1rem] py-[1rem] hover:border-black hover:border-[3px] hover:bg-light hover:text-black hover:scale-[1.02] ease-in 
+}
+.btn-black{
+    @apply border-[3px] border-black w-[8rem] h-[4rem]  px-[1rem] py-[1rem] text-center hover:bg-primary hover:border-primary
+}
+/* ---------SERVICES-------- */
+.services__wrapper h2{
+@apply flex text-gray-500 text-[2rem] justify-center mb-[2rem]
+}
+.card__list i{
+    @apply flex text-[2rem] justify-center my-[1.5rem] text-primary
+}
+.card__list h3{
+    @apply flex text-[2rem] justify-center
+}
+.card__list p{
+    @apply flex max-w-[25rem] text-center mx-auto my-[1rem]
+}
+ .card__list{
+    @apply border-[6px] text-gray-500 mb-[2rem]
+}
+.card__all{
+    @apply lg:grid lg:grid-cols-3 
+}
 
 }
+
+/* .card__list{
+    @apply border-[6px] text-gray-500 mb-[2rem] 
+}
+.card__list i{
+    @apply flex text-[2rem] justify-center my-[1.5rem]
+}
+.card__list h3{
+    @apply flex text-[2rem] justify-center 
+}
+.card__list p{
+    @apply flex text-[1rem] text-center m-auto mb-[1rem] w-[25rem]
+}
+.card__list i{
+    @apply text-primary
+}
+.services__text{
+    @apply lg:grid lg:grid-cols-3 lg:min-w-[70rem] lg:m-auto
+} */
