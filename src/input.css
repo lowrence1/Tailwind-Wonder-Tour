@@ -249,7 +249,10 @@
 @apply flex text-gray-500 text-[2rem] justify-center mb-[2rem]
 }
 .card__list i{
-    @apply flex text-[2rem] justify-center my-[1.5rem] text-primary
+    @apply flex text-[2rem] justify-center my-[1.5rem] text-primary 
+}
+.card__list:first-child i{
+    @apply rotate-[269deg]
 }
 .card__list h3{
     @apply flex text-[2rem] justify-center
@@ -258,10 +261,10 @@
     @apply flex max-w-[25rem] text-center mx-auto my-[1rem]
 }
  .card__list{
-    @apply border-[6px] text-gray-500 mb-[2rem]
+    @apply border-[6px] text-gray-500 mb-[2rem] 
 }
 .card__all{
-    @apply lg:grid lg:grid-cols-3 
+    @apply lg:grid lg:grid-cols-3 lg:w-full lg:max-w-[70rem] lg:mx-auto lg:gap-3;
 }
 
 }
