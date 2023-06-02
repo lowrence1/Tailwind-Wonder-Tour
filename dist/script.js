@@ -25,3 +25,27 @@ nav.forEach((baba) => {
   });
 });
 
+//coffee nav
+const starNav = document.querySelectorAll(".discover__nav__link");
+const starContent = document.querySelectorAll(".discover__tab__content");
+starNav.forEach((nav) => {
+    nav.addEventListener("click", () => {
+    removeActiveStar();
+    nav.classList.add("active");
+    const activeContent = document.querySelector(`#${nav.id}-content`);
+    removeActiveContent();
+    activeContent.classList.add("active");
+    });
+});
+
+function removeActiveStar() {
+  starNav.forEach((nav) => {
+  nav.classList.remove("active");
+  });
+}
+
+function removeActiveContent() {
+  starContent.forEach((nav) => {
+  nav.classList.remove("active");
+  });
+}
