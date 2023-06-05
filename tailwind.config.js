@@ -21,6 +21,9 @@ module.exports = {
     'bannerBG1':'url("./img/slider-4-slide-3-1920x678.jpg")',
     'bannerBG2':'url("./img/slider-4-slide-2-1920x678.jpg")',
     'bannerBG3': 'url("./img/slider-4-slide-1-1920x678.jpg")',
+    'first-bg':'url("./img/parallax-1-1920x850.jpg")',
+    'dream-bg':'url("./img/thumnails-info-1-370x303.jpg")',
+
   },
   plugins: [],
 }
