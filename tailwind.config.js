@@ -23,7 +23,7 @@ module.exports = {
     'bannerBG3': 'url("./img/slider-4-slide-1-1920x678.jpg")',
     'first-bg':'url("./img/parallax-1-1920x850.jpg")',
     'dream-bg':'url("./img/thumnails-info-1-370x303.jpg")',
-
+    'email-bg': 'url("./img/parallax-2-1920x850.jpg")',
   },
   plugins: [],
 }
